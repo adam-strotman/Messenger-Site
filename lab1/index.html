@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Messenger 0.0</title>
+
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"> </script>
+        <script src="static/js/main.js"></script>
+        
+    </head>
+    <body>
+        <center style="border-radius: 50px; background-color: lightblue; padding: 20px; width: 300px; height: 300px;">
+            <h1>Messenger 0.0</h1>
+            <p>Developed by Adam Strotman</p>
+            <div id="loginUI">
+                Please login first: <br>
+                <input type="text" id="username" placeholder="Enter your name...">
+                <button type="button" onclick="login()">Join</button>
+        
+            </div>
+            <div id="chatUI">
+                Your message: <input type="text" id="message" placeholder="Enter your message ..."> 
+                <button type="button" onclick="sendmessage()">Send</button>
+                <div id="messages">
+                </div>
+            </div>
+        </center>
+    </body>
+</html>
